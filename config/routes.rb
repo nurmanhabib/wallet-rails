@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  post "stock/top-up" => "stock#top_up_balance", as: :stock_top_up_balance
 end
